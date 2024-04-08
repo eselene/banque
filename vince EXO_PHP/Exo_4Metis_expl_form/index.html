@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- Déclaration du type de document, indique qu'il s'agit d'un document HTML -->
+<html lang="fr"> <!-- Balise d'ouverture de l'élément <html>, avec l'attribut lang pour spécifier la langue (anglais) -->
+
+<head> <!-- Balise d'ouverture de l'élément <head>, contient les métadonnées et les liens vers les fichiers externes -->
+  <meta charset="UTF-8"> <!-- Définition du jeu de caractères -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Définition de la compatibilité avec Internet Explorer -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuration de la vue sur les appareils mobiles -->
+  <title>Formulaire</title> <!-- Titre de la page -->
+</head>
+
+<body> <!-- Balise d'ouverture de l'élément <body>, contient le contenu visible de la page -->
+
+  <h1>Fiche du personnel - formulaire</h1> <!-- Titre de niveau 1 -->
+  <p>Merci de renseigner les informations suivantes :</p> <!-- Paragraphe -->
+
+  <form name="ficheForm" action="formul.php" method="POST"> <!-- Balise d'ouverture de la balise <form>, avec l'attribut name pour le nom du formulaire, l'attribut action pour l'URL de destination des données et l'attribut method pour la méthode d'envoi des données (POST) -->
+
+    <table> <!-- Balise d'ouverture de l'élément <table>, utilisée pour créer un tableau -->
+
+      <tr> <!-- Balise d'ouverture de l'élément <tr>, utilisée pour définir une ligne dans un tableau -->
+        <td>Votre nom :</td> <!-- Balise d'ouverture de l'élément <td>, utilisée pour définir une cellule dans un tableau -->
+        <td><input type="text" name="nom" size="30"></td> <!-- Champ de saisie de texte avec l'attribut type, le nom du champ (utilisé pour identifier le champ côté serveur) et la taille -->
+      </tr> <!-- Balise de fermeture de l'élément <tr> -->
+
+      <!-- Autres lignes et cellules du tableau similaires pour les autres champs du formulaire -->
+
+      <tr>
+        <td>Vos centres d'intérêt :</td>
+        <td>
+          <input type="checkbox" name="internet" value="internet" checked>Internet&nbsp;
+          <input type="checkbox" name="micro" value="micro">Micro-informatique&nbsp;
+          <input type="checkbox" name="jeux" value="jeux">Jeux Vidéo&nbsp;
+        </td>
+      </tr>
+
+      <tr>
+        <td><input type="reset" value="Recommencer"></td> <!-- Bouton de réinitialisation du formulaire -->
+        <td><input type="submit" value="Envoyer"></td> <!-- Bouton de soumission du formulaire -->
+      </tr>
+
+    </table> <!-- Balise de fermeture de l'élément <table> -->
+
+  </form> <!-- Balise de fermeture de la balise <form> -->
+
+</body> <!-- Balise de fermeture de l'élément <body> -->
+
+</html> <!-- Balise de fermeture de l'élément <html> -->

@@ -1,0 +1,11 @@
+*{
+    color: rgb(15, 7, 76);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    width: 100vw;
+}
